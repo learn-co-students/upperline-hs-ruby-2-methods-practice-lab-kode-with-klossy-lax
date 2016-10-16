@@ -7,7 +7,7 @@ end
 
 # Now you give it a shot! It takes about 156 seconds to go between stops and you'll be taking the train for 3 stops. Write a method that returns how long your trip will take.
 def trip_length
-	"#{156 * 3} seconds"
+	"The trip will take #{156 * 3} seconds."
 end
 
 # While you are waiting for the train you decide to play a little dice. Create a method called roll that returns a random number between 1 and 6 (feel free to google "how to generate a random number in ruby").
@@ -20,7 +20,7 @@ end
 
 # The train arrives and you hop on. Guess what time it is? It's showtime! There are 23 people on the train and each person gives the dancers 1.5 dollars. Write a method called pay_dancers that returns how much money they made.
 def pay_dancers
-  "#{23.0 * 1.5} dollars"
+  "The dancers were paid #{23.0 * 1.5} dollars"
 end
 
 # There is one grumpy lady on the train that doesn't like the dancing though. Write a method called stop_dancing that returns a message to the dancers in all caps.
@@ -30,14 +30,13 @@ end
 
 # There is also a really enthusiastic rider who keeps shouting "Everything is awesome!" Write a method called everything_is_awesome that returns one string with "Everything is awesome!" 5 times. (Ruby has a `.times` method that can help you do this. Think about setting up an empty string and adding to it five times)
 def everything_is_awesome
-  5.times do
-    print "Everything is awesome! "
-  end
+    "Everything is Awesome!" * 5
 end
 
 # You are almost at your stop and you start thinking about how you are going to get home. You have $18 dollars left on your metro card (For those of you not in New York, the price of a metro card is now $2.75). Write a method called remaining_trips that return how many trips you have left.
 def remaining_trips
-  18.0 / 2.75
+  trips = 18.0 / 2.75
+  "There are #{trips.floor} trips left on the MetroCard."
 end
 
 
